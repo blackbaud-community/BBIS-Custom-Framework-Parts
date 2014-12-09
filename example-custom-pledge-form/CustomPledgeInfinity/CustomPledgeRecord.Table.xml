@@ -1,0 +1,27 @@
+﻿<TableSpec
+	xmlns="bb_appfx_table"
+	xmlns:common="bb_appfx_commontypes"
+	ID="b8746f13-9fa6-44a1-aea7-6198d65eace7"
+	Name="CustomPledgeRecord"
+	Description="A custom pledge record to hold pledge information from a custom BBIS pledge form"
+	Author="Technical Training"
+	Tablename="USR_CUSTOMPLEDGERECORD"
+	>
+
+  <!-- define fields on the table -->
+  <Fields>
+    <TextField Name="KEYNAME" Required="true" Description="Last name" Length="100"/>
+    <TextField Name="FIRSTNAME" Required="true" Description="First name" Length="100"/>
+    <TextField Name="MIDDLENAME" Required="false" Description="Middle name" Length="100"/>
+    <ForeignKeyField Name="CONSTITUENTID" Required="false" Description="Foreign key to constituent record"
+                      ForeignTable="CONSTITUENT" ForeignFieldName="ID"  />
+    <EmailAddressField Name="EMAIL" Description="Email address"/>
+    <CodeTableField CodeTable="USR_CUSTOMCLASSYEARCODE" Name="USR_CUSTOMCLASSYEARCODEID"
+                Required="false" Description="Custom class year code" />
+
+    <CodeTableField CodeTable="EDUCATIONALHISTORYLEVELCODE" Name="EDUCATIONALHISTORYLEVELCODEID" Required="false"
+                    Description="Educational history code" />
+    <MoneyField Name="AMOUNT" Description="Amount of pledge" Required="true"/>
+  </Fields>
+
+</TableSpec>
