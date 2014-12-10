@@ -1,7 +1,7 @@
 BBIS-Custom-Framework-Parts
 ===========================
 
-This repo contains some common examples of custom framework parts.  In order to successfully create and deploy the examples included in this repository, you'll need the following.
+This repo contains some common examples of custom framework parts.  Learn more about these examples in the [Custom Framework Parts section](http://developer.blackbaud.com/bbis/guide/custom-framework-parts/) of the [BBIS Developer Guide](http://developer.blackbaud.com/bbis/guide/).  In order to successfully create and deploy the examples included in this repository, you'll need the following.
 
 - Access to:
   - custom parts in Blackbaud Internet Solutions
